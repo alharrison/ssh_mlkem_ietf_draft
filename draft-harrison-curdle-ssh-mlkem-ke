@@ -44,9 +44,9 @@ venue:
 
 author:
  -
-    fullname: Your Name Here
-    organization: Your Organization Here
-    email: your.email@example.com
+    fullname: Alexander Harrison
+    organization: Cisco
+    email: aleharri@cisco.com
 
 normative:
 
@@ -55,8 +55,9 @@ informative:
 
 --- abstract
 
-TODO Abstract
-
+This document defines Post-Quantum key exchange methods based on 
+Module-lattice post-quantum key encapsulation schemes.  These methods
+are defined for use in the SSH Transport Layer Protocol.
 
 --- middle
 
@@ -68,7 +69,8 @@ TODO Introduction
 # Conventions and Definitions
 
 {::boilerplate bcp14-tagged}
-
+{::boilerplate bcp78-tagged}
+{::boilerplate bcp79-tagged}
 
 # Security Considerations
 
@@ -77,8 +79,10 @@ TODO Security
 
 # IANA Considerations
 
-This document has no IANA actions.
-
+This memo includes requests of IANA to register new method names
+"ml-kem-512-sha256", "ml-kem-768-sha256", "ml-kem-1024-sha384", and
+to be registered by IANA in the "Key Exchange Method Names" registry
+for SSH [IANA-SSH].
 
 --- back
 
